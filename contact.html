@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Kontakta oss</h1>
+        <p>Fyll i formuläret</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Gå tillbaka</a></li>
+        </ul>
+    </nav>
+
+    <form action="https://httpbin.org/post" method="post">
+
+    <main>
+        <fieldset>
+            <legend>Kontakt formulär</legend>
+
+            <section id="nameField">
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+            </section>
+
+            <section id="emailField">
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+            </section>
+
+            <section id="messageField">
+                <label for="message">Meddelande:</label>
+                <textarea id="message" name="message" minlength="10" maxlength="500" required></textarea>
+            </section>
+
+            <section id="topicField">
+                <label for="topic">Ämne:</label>
+                <select id="topic" name="topic">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="other">Annat</option>
+                </select>
+            </section>
+
+            <section id="contactMethodField">
+                <p>Hur ska du bli kontaktad?:</p>
+
+                <label><input type="radio" name="contact" value="email"> E-post</label>
+                <label><input type="radio" name="contact" value="phone"> Telefon</label>
+            </section>
+        </fieldset>
+        <button type="submit">Skicka</button>
+    </main>
+</form>
+
+</body>
+</html>
