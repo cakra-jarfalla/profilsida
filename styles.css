@@ -1,0 +1,17 @@
+h1 { color: #2d4048; }
+
+header {
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    color: #172026;
+    background-color: #8eacb8;
+    font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+    font-weight: normal;
+}
+
+p {
+    line-height: 1.5;
+    text-align: left;
+}
