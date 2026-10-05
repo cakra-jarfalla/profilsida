@@ -1,3 +1,10 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
 h1 { color: #2d4048; }
 
 header {
@@ -9,9 +16,36 @@ body {
     background-color: #8eacb8;
     font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
     font-weight: normal;
+    margin: 10;
 }
 
 p {
     line-height: 1.5;
     text-align: left;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.card {
+    padding: 1rem;
+    margin: 0 auto 1.5rem auto; 
+    border: 2px solid #6c818a;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #5d6c72;
+    color: #000000;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-top: 10px;
 }
